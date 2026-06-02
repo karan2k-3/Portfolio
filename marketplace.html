@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Marketplace | Karan Khanna</title>
+
+  <link rel="stylesheet" href="marketplace.css" />
+</head>
+<body>
+  <!-- same floating orbs background -->
+  <div class="floating-orb orb-1"></div>
+  <div class="floating-orb orb-2"></div>
+  <div class="floating-orb orb-3"></div>
+
+  <header>
+    <h2 class="logo">
+      <a href="index.html" style="text-decoration:none; color:inherit;">
+        Karan Khanna
+      </a>
+    </h2>
+
+    <nav>
+      <a href="index.html#home">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="scroll-container">
+    <!-- Top section with title + buttons -->
+    <section class="panel" id="marketplace-hero">
+      <div class="panel-content reveal">
+        <p class="project-tag">Mobile App · Flutter · Firebase</p>
+        <h1>Campus Marketplace (UniSwap)</h1>
+        <p class="section-text">
+          A student-focused marketplace app that lets university students buy and sell
+          items on campus using a simple, modern mobile interface.
+        </p>
+
+        <div class="hero-buttons" style="margin-top: 1.5rem;">
+          <a href="assets/uniswap.apk" class="btn" download>
+            Download APK
+          </a>
+
+          <a
+            href="https://github.com/MQ-COMP3130/workshop-activities-20-karan2k-3-1"
+            class="btn btn-outline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Code
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screenshots (s1–s8) -->
+    <section class="panel" id="marketplace-screens">
+      <div class="panel-content reveal">
+        <h2>Screenshots</h2>
+        <div class="project-screenshots">
+          <figure class="screenshot-card">
+            <img src="assets/s1.png" alt="Screenshot 1" />
+            <figcaption>Screenshot 1</figcaption>
+          </figure>
+
+          <figure class="screenshot-card">
+            <img src="assets/s2.png" alt="Screenshot 2" />
+            <figcaption>Screenshot 2</figcaption>
+          </figure>
+
+          <figure class="screenshot-card">
+            <img src="assets/s3.png" alt="Screenshot 3" />
+            <figcaption>Screenshot 3</figcaption>
+          </figure>
+
+          <figure class="screenshot-card">
+            <img src="assets/s4.png" alt="Screenshot 4" />
+            <figcaption>Screenshot 4</figcaption>
+          </figure>
+
+          <figure class="screenshot-card">
+            <img src="assets/s5.png" alt="Screenshot 5" />
+            <figcaption>Screenshot 5</figcaption>
+          </figure>
+
+          <figure class="screenshot-card">
+            <img src="assets/s6.png" alt="Screenshot 6" />
+            <figcaption>Screenshot 6</figcaption>
+          </figure>
+
+          <figure class="screenshot-card">
+            <img src="assets/s7.png" alt="Screenshot 7" />
+            <figcaption>Screenshot 7</figcaption>
+          </figure>
+
+          <figure class="screenshot-card">
+            <img src="assets/s8.png" alt="Screenshot 8" />
+            <figcaption>Screenshot 8</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Description / features -->
+    <section class="panel" id="marketplace-details">
+      <div class="panel-content reveal">
+        <h2>About the app</h2>
+        <p class="section-text">
+          The app is built with Flutter and Firebase and is designed specifically for
+          university students. Users can sign up, create listings for items they want
+          to sell, browse available items, and contact other students to arrange
+          purchases on campus.
+        </p>
+
+        <h3>Key features</h3>
+        <ul class="project-list">
+          <li>Email/password sign up and login with Firebase Authentication.</li>
+          <li>Create, edit and delete listings with images, description and price.</li>
+          <li>Real-time listing updates stored in Cloud Firestore.</li>
+          <li>Simple search and browse experience for campus items.</li>
+          <li>Clean red and black UI designed for Android phones.</li>
+        </ul>
+
+        <h3>Firebase features</h3>
+        <ul class="project-list">
+          <li>Firebase Authentication for secure student sign-in.</li>
+          <li>Cloud Firestore for real-time listing and user data.</li>
+          <li>Firebase Storage for uploading and serving item images.</li>
+          <li>Security rules restricting writes to authenticated users.</li>
+        </ul>
+
+        <h3>Tech stack</h3>
+        <ul class="project-list">
+          <li>Flutter and Dart for the mobile app.</li>
+          <li>Firebase Authentication for user accounts.</li>
+          <li>Cloud Firestore for storing listings and user data.</li>
+          <li>Firebase Storage for item images.</li>
+        </ul>
+
+        <p style="margin-top: 2rem;">
+          <a href="index.html#projects" class="back-link">
+            ← Back to all projects
+          </a>
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

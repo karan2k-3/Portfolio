@@ -4,13 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Karan Khanna | Portfolio</title>
+
+  <!-- Devicon icons CDN -->
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+  />
+
+  <!-- Main stylesheet -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="floating-orb orb-1"></div>
-  <div class="floating-orb orb-2"></div>
-  <div class="floating-orb orb-3"></div>
-
   <header>
     <h2 class="logo">Karan Khanna</h2>
 
@@ -24,85 +29,209 @@
   </header>
 
   <main class="scroll-container">
-    <section id="home" class="panel">
-      <div class="panel-content reveal">
-        <h1 class="name-hover typing-text">Hi, I'm Karan</h1>
-        <p class="subtitle">
-          Final-year IT student at Macquarie University | Aspiring Software Developer
-        </p>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn">View Projects</a>
-          <a href="#contact" class="btn btn-outline">Contact Me</a>
+    <!-- HERO -->
+    <section id="home" class="hero-section">
+      <div class="hero-inner">
+        <!-- Left: text -->
+        <div class="hero-text">
+          <p class="hero-tagline">Aspiring Software Engineer</p>
+          <h1 class="hero-title">
+            Karan<br />
+            Khanna<br />
+            
+          </h1>
+          <p class="hero-subtitle">
+            Hello! I’m Karan, an IT graduate from Macquarie University with a strong
+            interest in software engineering. I enjoy turning ideas into working apps
+            and I’m currently looking for graduate and junior developer roles where I
+            can keep learning and ship real products.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn-outline">Contact Me</a>
+          </div>
+        </div>
+
+        <!-- Right: your photo -->
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-circle"></div>
+          <img
+            src="assets/karan.png"
+            alt="Photo of Karan Khanna"
+            class="hero-photo"
+          />
+        </div>
+      </div>
+
+      <!-- Bottom green card -->
+      <div class="hero-bottom-card">
+        <div class="hero-contact-block">
+          <h3>Contact</h3>
+          <p>Email: kkarann367@gmail.com</p>
+          <p>Location: Sydney, Australia</p>
+        </div>
+
+        <div class="hero-skills-block">
+          <h3>Key Skills</h3>
+          <div class="hero-skills-row">
+            <span>Flutter</span>
+            <span>Firebase</span>
+            <span>Python</span>
+            <span>SQL</span>
+          </div>
+        </div>
+
+        <div class="hero-links-block">
+          <h3>Find Me</h3>
+          <div class="hero-links-row">
+            <a href="https://www.linkedin.com/in/karankhanna26/"
+               target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/karan2k-3"
+               target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- ABOUT -->
     <section id="about" class="panel">
-      <div class="panel-content reveal">
-        <h2>About Me</h2>
-        <p class="section-text">
-          I'm a final-year Bachelor of Information Technology student at Macquarie University.
-          I enjoy building software, learning new technologies, and creating practical projects
-          that strengthen my development skills.
-        </p>
+      <div class="panel-content">
+        <div class="card">
+          <h2>About Me</h2>
+          <p class="section-text">
+            I'm a final-year Bachelor of Information Technology student at Macquarie University.
+            I enjoy building software, learning new technologies, and creating practical projects
+            that strengthen my development skills.
+          </p>
 
-        <div class="info-card">
-          <h3>What I’m focused on</h3>
-          <p>
-            I’m currently building portfolio projects in software development, web development,
-            app design, and technical problem-solving to support internships and graduate roles.
+          <p class="section-text">
+            I’m currently focusing on mobile app development, web development, and technical
+            problem-solving to prepare for internships and graduate roles in software engineering.
           </p>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="panel">
-      <div class="panel-content reveal">
-        <h2>My Skills</h2>
+    <!-- SKILLS -->
+<section id="skills" class="panel">
+  <div class="panel-content">
+    <div class="card">
+      <h2>My Skills</h2>
 
-        <div class="skills-grid">
-          <div class="skill-card">HTML</div>
-          <div class="skill-card">CSS</div>
-          <div class="skill-card">Java</div>
-          <div class="skill-card">Python</div>
-          <div class="skill-card">Git</div>
-          <div class="skill-card">SQL</div>
-          <div class="skill-card">Flutter</div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="devicon-html5-plain colored"></i>
+          <span>HTML</span>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-css3-plain colored"></i>
+          <span>CSS</span>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-java-plain colored"></i>
+          <span>Java</span>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-python-plain colored"></i>
+          <span>Python</span>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-git-plain colored"></i>
+          <span>Git</span>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-mysql-plain colored"></i>
+          <span>SQL</span>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-flutter-plain colored"></i>
+          <span>Flutter</span>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-figma-plain colored"></i>
+          <span>Figma</span>
         </div>
       </div>
-    </section>
+    </div>
 
+    <!-- New soft skills / AI skills box -->
+    <div class="card" style="margin-top:16px;">
+      <h2>How I Work</h2>
+      <p class="section-text">
+        I’m a fast learner, organised, and comfortable working both independently
+        and in small teams. I like breaking problems down, asking clear questions,
+        and communicating progress honestly.
+      </p>
+      <p class="section-text">
+        I use AI tools every day for planning, debugging, and content drafting, and
+        I understand concepts like token limits, context windows, and prompt
+        structure so that I can get reliable, efficient results instead of random
+        outputs.
+      </p>
+      <p class="section-text">
+        I’m confident with tools like ChatGPT and Perplexity, and I’m careful
+        about checking AI-generated code and explanations before using them
+        in real projects.
+      </p>
+    </div>
+  </div>
+</section>
+
+    <!-- PROJECTS -->
     <section id="projects" class="panel">
-      <div class="panel-content reveal">
-        <h2>Projects</h2>
+      <div class="panel-content">
+        <div class="card">
+          <h2>Projects</h2>
 
-        <div class="project">
-          <h3>Campus Marketplace</h3>
-          <p>
-            A student-focused marketplace app concept designed to help students buy and sell
-            items on campus in a simple and user-friendly way.
-          </p>
-        </div>
+          <div class="project">
+            <h3>
+              <a href="marketplace.html">Campus Marketplace (UniSwap) - click here for details </a>
+            </h3>
+            <p>
+              A student-focused marketplace app designed to help students buy and sell
+              items on campus using a simple and user-friendly mobile interface.
+            </p>
+          </div>
 
-        <div class="project">
-          <h3>Tank Graphics</h3>
-          <p>
-            An OpenGL / LWJGL graphics project featuring a rendered scene, custom object design,
-            and keyboard-controlled tank movement.
-          </p>
+          <div class="project">
+            <h3>Tank Graphics</h3>
+            <p>
+              An OpenGL / LWJGL graphics project featuring a rendered scene, custom object design,
+              and keyboard-controlled tank movement.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact" class="panel">
-      <div class="panel-content reveal">
-        <h2>Contact</h2>
-        <p class="section-text">Replace these with your real details.</p>
+      <div class="panel-content">
+        <div class="card">
+          <h2>Contact</h2>
+          <p class="section-text">
+            Feel free to reach out for project collaborations, internships, or graduate opportunities.
+          </p>
 
-        <div class="contact-box">
-          <p><strong>Email:</strong> your-email@example.com</p>
-          <p><strong>LinkedIn:</strong> linkedin.com/in/yourprofile</p>
-          <p><strong>GitHub:</strong> github.com/yourusername</p>
+          <div class="contact-box">
+            <p><strong>Email:</strong> kkarann367@gmail.com</p>
+            <p><strong>Phone:</strong> +61 0450591070</p>
+            
+
+            <div style="display:flex; align-items:center; gap:12px; margin-top:8px;">
+              <a href="https://www.linkedin.com/in/karankhanna26/"
+                target="_blank" rel="noopener noreferrer"
+                class="social-btn">
+                LinkedIn
+              </a>
+              <a href="https://github.com/karan2k-3"
+                target="_blank" rel="noopener noreferrer"
+                class="social-btn">
+                GitHub
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
